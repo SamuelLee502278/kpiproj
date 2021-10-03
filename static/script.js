@@ -1,63 +1,94 @@
-// This is for able to see chart. We are using Apex Chart. U can check the documentation of Apex Charts too..
 var options = {
+  chart: {
+    height: 350,
+    type: "line",
+    stacked: false
+  },
+  dataLabels: {
+    enabled: false
+  },
+  colors: ["#FF1654", "#247BA0"],
   series: [
     {
-      name: "Net Profit",
-      data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
+      name: "Actual",
+      data: [1.4, 2, 2.5, 1.5, 2.5, 2.8, 3.8, 4.6]
     },
     {
-      name: "Revenue",
-      data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
-    },
-    {
-      name: "Free Cash Flow",
-      data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
-    },
+      name: "Budget",
+      data: [20, 29, 37, 36, 44, 45, 50, 58]
+    }
   ],
-  chart: {
-    type: "bar",
-    height: 250, // make this 250
-    sparkline: {
-      enabled: true, // make this true
-    },
+  stroke: {
+    width: [4, 4]
   },
   plotOptions: {
     bar: {
-      horizontal: false,
-      columnWidth: "55%",
-      endingShape: "rounded",
-    },
-  },
-  dataLabels: {
-    enabled: false,
-  },
-  stroke: {
-    show: true,
-    width: 2,
-    colors: ["transparent"],
+      columnWidth: "20%"
+    }
   },
   xaxis: {
-    categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+    categories: ["11-20", "11-21", "11-22","11-23","11-24","11-25","11-26","11-27"  ]
   },
-  yaxis: {
-    title: {
-      text: "$ (thousands)",
-    },
-  },
-  fill: {
-    opacity: 1,
-  },
-  tooltip: {
-    y: {
-      formatter: function (val) {
-        return "$ " + val + " thousands";
+  yaxis: [
+    {
+      axisTicks: {
+        show: true
       },
+      axisBorder: {
+        show: true,
+        color: "#FF1654"
+      },
+      labels: {
+        style: {
+          colors: "#FF1654"
+        }
+      },
+      title: {
+        text: "Actual",
+        style: {
+          color: "#FF1654"
+        }
+      }
     },
+    {
+      opposite: true,
+      axisTicks: {
+        show: true
+      },
+      axisBorder: {
+        show: true,
+        color: "#247BA0"
+      },
+      labels: {
+        style: {
+          colors: "#247BA0"
+        }
+      },
+      title: {
+        text: "Budget",
+        style: {
+          color: "#247BA0"
+        }
+      }
+    }
+  ],
+  tooltip: {
+    shared: false,
+    intersect: true,
+    x: {
+      show: false
+    }
   },
+  legend: {
+    horizontalAlign: "left",
+    offsetX: 40
+  }
 };
 
 var chart = new ApexCharts(document.querySelector("#apex1"), options);
+
 chart.render();
+
 
 // Sidebar Toggle Codes;
 

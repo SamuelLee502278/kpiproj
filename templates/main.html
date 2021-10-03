@@ -20,8 +20,9 @@
         </div>
         <div class="navbar__left">
           <a class="active_link" href="#">Budget</a>
-          <a href="#">KPI #1</a>
-          <a href="#">KPI #2</a>
+          <a href="#">Schedule</a>
+          <a href="#">Expenses</a>
+          <a href="#">Employee Input</a>
         </div>
         <div class="navbar__right">
           <a href="#">
@@ -54,42 +55,42 @@
           <div class="main__cards">
             <div class="card">
               <i
-                class="fa fa-user-o fa-2x text-lightblue"
+                class="fa fa-map-marker fa-2x text-lightblue"
                 aria-hidden="true"
               ></i>
               <div class="card_inner">
-                <p class="text-primary-p">Number of Employees</p>
-                <span class="font-bold text-title">80</span>
+                <p class="text-primary-p">Location</p>
+                <span class="font-bold text-title">Gila River, AZ</span>
               </div>
             </div>
 
             <div class="card">
-              <i class="fa fa-briefcase fa-2x text-red" aria-hidden="true"></i>
+              <i class="fa fa-truck fa-2x text-green" aria-hidden="true"></i>
               <div class="card_inner">
-                <p class="text-primary-p">Number of Projects</p>
-                <span class="font-bold text-title">6</span>
-              </div>
-            </div>
-
-            <div class="card">
-              <i
-                class="fa fa-users fa-2x text-yellow"
-                aria-hidden="true"
-              ></i>
-              <div class="card_inner">
-                <p class="text-primary-p">Labor Cost</p>
-                <span class="font-bold text-title">$54,340</span>
+                <p class="text-primary-p">Type</p>
+                <span class="font-bold text-title">Highways and Bridges</span>
               </div>
             </div>
 
             <div class="card">
               <i
-                class="fa fa fa-truck fa-2x text-green"
+                class="fa fa-calendar fa-2x text-yellow"
                 aria-hidden="true"
               ></i>
               <div class="card_inner">
-                <p class="text-primary-p">Material Cost</p>
-                <span class="font-bold text-title">$90,645</span>
+                <p class="text-primary-p">Start Date</p>
+                <span class="font-bold text-title">2021-07-28</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <i
+                class="fa fa fa-calendar fa-2x text-green"
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">End Date</p>
+                <span class="font-bold text-title">2021-11-27</span>
               </div>
             </div>
           </div>
@@ -100,8 +101,8 @@
             <div class="charts__left">
               <div class="charts__left__title">
                 <div>
-                  <h1>Daily Reports | US-60 Lane Expansion</h1>
-                  <p>Houston, Texas, USA</p>
+                  <h1> Expected vs. Actual</h1>
+                  <p></p>
                 </div>
                 <i class="fa fa-usd" aria-hidden="true"></i>
               </div>
@@ -112,30 +113,30 @@
               <div class="charts__right__title">
                 <div>
                   <h1>Project Reports</h1>
-                  <p>Houston, Texas, USA</p>
+                  <p></p>
                 </div>
                 <i class="fa fa-usd" aria-hidden="true"></i>
               </div>
 
               <div class="charts__right__cards">
                 <div class="card1">
-                  <h1>US-60 Lane Expansion</h1>
-                  <p>$75,300</p>
-                </div>
-
-                <div class="card2">
-                  <h1>AZ-303 Renovation</h1>
-                  <p>$124,200</p>
-                </div>
-
-                <div class="card3">
-                  <h1>EAZ-89 Repave</h1>
-                  <p>$3283,222</p>
+                  <h1>Total Cost Variance</h1>
+                  <p>$30</p>
                 </div>
 
                 <div class="card4">
-                  <h1>I-10 Lane Expansion</h1>
-                  <p>$18,0081</p>
+                  <h1>Equipment Cost Remaining</h1>
+                  <p style="color: red;"><b>$(181.75)</b></p>
+                </div>
+
+                <div class="card2">
+                  <h1>Labor Cost Remaining</h1>
+                  <p style="color: green;"><b>$342.59</b></p>
+                </div>
+
+                <div class="card4">
+                  <h1>Material Cost Remaining</h1>
+                  <p style="color: red;"><b>$(86.49)</b></p>
                 </div>
               </div>
             </div>
@@ -148,7 +149,7 @@
         <div class="sidebar__title">
           <div class="sidebar__img">
             <!-- <img src="/images/logo HCSS.png" alt="logo" /> -->
-            <h1>DeBackEnd</h1>
+            <h1><B>HCSS</B></h1>
           </div>
           <i
             onclick="closeSidebar()"
