@@ -2,7 +2,7 @@ import pymongo
 import json
 from pymongo import MongoClient
 
-client = MongoClient("mongodb+srv://sam9977:codered1234@cluster0.bsjir.mongodb.net/kpi_proj?retryWrites=true&w=majority", ssl=True,ssl_cert_reqs='CERT_NONE')
+client = MongoClient("", ssl=True,ssl_cert_reqs='CERT_NONE')
 db = client["kpi_proj"]
 collection_project = db["project"]
 
